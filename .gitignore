@@ -1,0 +1,7 @@
+//提交到git忽略的文件
+.idea
+*.iml
+/*/target
+*.log
+*.jar
+logs
