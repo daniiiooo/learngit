@@ -12,6 +12,7 @@ public enum ResponseCode{
     NO_RESPONSE_DATA(0,"无响应数据"),
     CHECK_CODE_NOT_EMPTY(0,"验证码不能为空"),
     CHECK_CODE_ERROR(0,"验证码错误"),
+    CHECK_CODE_TIMEOUT(0,"验证码已过期"),
     USERNAME_OR_PASSWORD_ERROR(0,"用户名或密码错误"),
     ACCOUNT_EXISTS_ERROR(0,"该账号已存在"),
     ACCOUNT_NOT_EXISTS(0,"该账号不存在"),
@@ -24,6 +25,7 @@ public enum ResponseCode{
     OPERATION_MENU_PERMISSION_BTN_ERROR(0,"操作后的菜单类型是按钮，所属菜单必须为菜单类型"),
     OPERATION_MENU_PERMISSION_URL_CODE_NULL(0,"菜单权限的按钮标识不能为空"),
     ROLE_PERMISSION_RELATION(0, "该菜单权限存在子集关联，不允许删除");
+
     private int code;
     private String message;
 
